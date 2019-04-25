@@ -1,0 +1,42 @@
+@import "layout/var";
+
+.price-block {
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    min-height: 300px;
+    padding: 54px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+        font-size: 24px;
+        max-width: 400px;
+        margin: 0 auto 32px auto;
+        text-align: center;
+
+        &--less-margin {
+            margin-bottom: 9px;
+        }
+    }
+
+    &__text {
+        font-size: 18px;
+        max-width: 400px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    &__button {
+        margin-top: auto;
+    }
+
+    &__rombus-title {
+        line-height: 43px;
+        font-size: 36px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+}

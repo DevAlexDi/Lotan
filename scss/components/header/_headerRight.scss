@@ -1,0 +1,19 @@
+@import "layout/var";
+
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    &__search {
+        margin-right: 24px;
+
+        @media (max-width: 767px){
+            display: none;
+        }
+    }
+
+    &__basket {
+        margin-right: 32px;
+    }
+}

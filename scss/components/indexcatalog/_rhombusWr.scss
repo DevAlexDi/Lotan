@@ -1,0 +1,37 @@
+@import "layout/var";
+
+.rhombus-wr {
+   position: relative;
+
+   &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: calc(100% + 35px);
+        width: 95px;
+        height: 2px;
+        background: #606060;
+    }
+
+   &:after {
+       content: "";
+       display: block;
+       position: absolute;
+       top: 50%;
+       transform: translateY(-50%);
+       left: calc(100% + 35px);
+       width: 95px;
+       height: 2px;
+       background: #606060;
+   }
+
+   &__rhombus {
+       width: 14px;
+       height: 14px;
+       background: #606060;
+       transform-origin: center;
+       transform: rotate(45deg);
+   }
+}

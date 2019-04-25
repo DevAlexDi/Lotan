@@ -1,0 +1,17 @@
+@import "layout/var";
+
+.button-consult {
+    display: block;
+    
+    &__img {
+        margin: 0 auto 13px auto;
+    }
+
+    &__text {
+        text-align: center;
+        display: block;
+        font-size: 14px;
+        font-family: $mus700;
+        color: #fff;
+    }
+}

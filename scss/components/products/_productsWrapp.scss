@@ -1,0 +1,13 @@
+@import "layout/var";
+
+.products-wrapp {
+    padding-top: 8px;
+    position: relative;
+    overflow: hidden;
+
+    &__title {
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 31px;
+    }
+}

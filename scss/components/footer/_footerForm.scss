@@ -1,0 +1,58 @@
+@import "layout/var";
+
+.footer-form {
+
+    &__title {
+        font-size: 24px;
+        margin-bottom: 24px;
+        color: #fff;
+        font-family: $mus700;
+    }
+
+    &__form {
+        display: flex;
+        margin-bottom: 34px;
+    }
+
+    &__input {
+        width: 100%;
+        padding: 0 32px;
+        border: none;
+        background: #fff;
+        display: block;
+        font-size: 16px;
+        outline: none;
+
+        &::-webkit-input-placeholder {
+            color:#C4C4C4;
+        }
+
+        &::-moz-placeholder {
+            color:#C4C4C4;
+        }
+
+        &:-moz-placeholder {
+            color:#C4C4C4;
+        }
+
+        &:-ms-input-placeholder {
+            color:#C4C4C4;
+        }
+    }
+
+    &__button {
+        display: block;
+        width: 203px;
+        flex-shrink: 0;
+        border: none;
+        background: $pink;
+        height: 52px;
+        color: #fff;
+        outline: none;
+        transition: color 0.3s, background-color 0.3s;
+
+        @media (max-width: 767px){
+            width: 100px;
+        }
+    }
+}

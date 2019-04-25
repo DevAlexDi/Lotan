@@ -1,0 +1,22 @@
+@import "layout/var";
+
+.sales {
+    display: flex;
+    margin-bottom: 42px;
+
+    @media (max-width: 1300px){
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        width: 25%;
+
+        @media (max-width: 1300px){
+            width: 50%;
+        }
+
+        @media (max-width: 767px){
+            width: 100%;
+        }
+    }
+}

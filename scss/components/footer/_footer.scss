@@ -1,0 +1,54 @@
+@import "layout/var";
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 1199px){
+        flex-wrap: wrap;
+    }
+
+    &__side {
+        padding-right: 30px;
+
+        &:last-child {
+            padding-right: 0;
+        }
+
+        &--logo {
+            width: 25%;
+
+            @media (max-width: 1199px){
+                width: 50%;
+                margin-bottom: 20px;
+            }
+
+            @media (max-width: 767px){
+                width: 100%;
+            }
+        }
+
+        &--menu {
+            width: 35%;
+        
+            @media (max-width: 1199px){
+                width: 50%;
+                margin-bottom: 20px;
+                padding-right: 0;
+            }
+
+            @media (max-width: 767px){
+                width: 100%;
+            }
+        }
+
+        &--form {
+            width: 40%;
+
+            @media (max-width: 1199px){
+                width: 100%;
+            }
+        }
+
+    }
+}

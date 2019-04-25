@@ -1,0 +1,32 @@
+@import "layout/var";
+
+.header-bottom {
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: 767px){
+        display: block;
+    }
+
+    &__menu {
+        border-top: 1px solid rgba(0, 0, 0, 0.05);
+        padding: 16px 0;
+
+        @media (max-width: 767px){
+            border: none;
+            padding: 0;
+            width: 100%;
+        }
+    }
+
+    .navbar-toggle{
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 5px;
+
+        .icon-bar{
+            background: #000;
+        }
+    }
+}

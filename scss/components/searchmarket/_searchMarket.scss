@@ -1,0 +1,76 @@
+@import "layout/var";
+
+.search-market {
+    margin-bottom: 26px;
+    background: linear-gradient(257.11deg, #D7D8DC -9.06%, #EAEBEF 51.84%);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+
+    &__bg-images {
+        padding: 55px 0 45px 0;
+        background-image: url(../img/search-bg-1.jpg), url(../img/search-bg-2.jpg);
+        background-position: top left, top right;
+        background-repeat: no-repeat;
+
+        @media (max-width: 1500px){
+            background-position: top left -150px, top right;
+        }
+
+        @media (max-width: 1199px){
+            background-position: top left -250px, top right;
+        }
+
+        @media (max-width: 991px){
+            background-image: none;
+        }
+    }
+
+    &__wrapp {
+        width: 100%;
+        max-width: 905px;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        font-size: 36px;
+        margin-bottom: 8px;
+        line-height: 43px;
+        color: #606060;
+    }
+
+    &__sub-title {
+        font-size: 18px;
+        margin-bottom: 24px;
+        color: #606060;
+    }
+
+    &__input {
+        display: block;
+        width: 100%;
+        border: none;
+        padding: 11px 24px;
+        font-size: 18px;
+        background: #fff;
+        margin-bottom: 31px;
+
+        &::-webkit-input-placeholder {
+            color:#C4C4C4;
+        }
+
+        &::-moz-placeholder {
+            color:#C4C4C4;
+        }
+
+        &:-moz-placeholder {
+            color:#C4C4C4;
+        }
+
+        &:-ms-input-placeholder {
+            color:#C4C4C4;
+        }
+    }
+
+    &__button {
+        justify-content: flex-end;
+    }
+}

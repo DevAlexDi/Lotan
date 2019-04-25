@@ -1,0 +1,31 @@
+@import "layout/var";
+
+.header-basket {
+    display: flex;
+    align-items: center;
+    
+    &__icon {
+        margin-right: 12px;
+        flex-shrink: 0;
+    }
+
+    &__count {
+        flex-shrink: 0;
+        margin-right: 8px;
+        width: 16px;
+        height: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 11px;
+        color: #fff;
+        border-radius: 50%;
+        background: $pink;
+    }
+
+    &__text {
+        font-size: 16px;
+        display: block;
+        color: #000;
+    }
+}

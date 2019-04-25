@@ -1,0 +1,26 @@
+@import "layout/var";
+
+.baner-wrapp {
+    position: relative;
+    overflow: hidden;
+
+    &__button {
+        z-index: 50;
+        position: absolute;
+        bottom: 124px;
+        right: 60px;
+
+        @media (max-width: 1300px){
+            bottom: 60px;
+            right: 40px;
+        }
+
+        @media (max-width: 991px){
+            bottom: 50px;
+        }
+
+        @media (max-width: 767px){
+            right: 15px;
+        }
+    }
+}

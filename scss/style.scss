@@ -1,0 +1,50 @@
+@import "base/fonts";
+@import "layout/var";
+@import "layout/app";
+//header
+@import "components/header/header";
+@import "components/header/headerTop";
+@import "components/header/selectCity";
+@import "components/header/logo";
+@import "components/header/headerRight";
+@import "components/header/headerBasket";
+@import "components/header/headerLogin";
+@import "components/header/headerBottom";
+@import "components/header/menuList";
+//baner
+@import "components/baner/banerWrapp";
+@import "components/baner/baner";
+@import "components/baner/slideOne";
+@import "components/baner/slideOneFlex";
+@import "components/baner/buttonWrapp";
+@import "components/baner/buttonConsult";
+@import "components/baner/sliderActions";
+//sales
+@import "components/sales/sales";
+@import "components/sales/sale";
+//products
+@import "components/products/productsWrapp";
+@import "components/products/products";
+@import "components/products/product";
+//ad
+@import "components/ad/adWrapper";
+@import "components/ad/ad";
+//index catalog
+@import "components/indexcatalog/indexCatalogWrapp";
+@import "components/indexcatalog/indexCatalog";
+@import "components/indexcatalog/priceBlock";
+@import "components/indexcatalog/rhombusWr";
+//search market form
+@import "components/searchmarket/searchMarket";
+//adw two
+@import "components/adtwo/adTwoWrapper";
+@import "components/adtwo/adtwo";
+//footer
+@import "components/footer/footerWrapp";
+@import "components/footer/footer";
+@import "components/footer/footerLeftSide";
+@import "components/footer/footerMenu";
+@import "components/footer/footerForm";
+@import "components/footer/footerSocials";
+@import "components/footer/copyright";
+@import "components/footer/copyrightWrapp";

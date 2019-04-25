@@ -1,0 +1,54 @@
+@import "layout/var";
+
+.footer-left-side {
+    &__logo {
+        display: flex;
+        align-items: center;
+        margin-bottom: 24px;
+    }
+
+    &__logo-img {
+        flex-shrink: 0;
+        margin-right: 5px;
+    }
+
+    &__logo-text {
+        font-size: 24px;
+        color: #fff;
+        font-family: $mus700;
+    }
+
+    &__link-wr {
+        display: flex;
+    }
+
+    &__tel {
+        display: block;
+        font-size: 24px;
+        font-family: $mus700;
+        color: #fff;
+        transition: color 0.3s;
+
+        &:hover {
+            color: $pink;
+        }
+    }
+
+    &__tel-text {
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 24px;
+    }
+
+    &__mail {
+        display: block;
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 19px;
+        transition: color 0.3s;
+
+        &:hover {
+            color: $pink;
+        }
+    }
+}

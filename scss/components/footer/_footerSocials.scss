@@ -1,0 +1,21 @@
+@import "layout/var";
+
+.footer-socials {
+    display: flex;
+    align-items: center;
+
+    &__item {
+        padding-right: 40px;
+
+        path {
+            transition: fill 0.3s;
+        }
+
+        &:hover {
+            path {
+                fill: $pink;
+            }
+    
+        }
+    }
+}
