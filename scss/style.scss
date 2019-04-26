@@ -9,8 +9,10 @@
 @import "components/header/headerRight";
 @import "components/header/headerBasket";
 @import "components/header/headerLogin";
+@import "components/header/navigation";
 @import "components/header/headerBottom";
 @import "components/header/menuList";
+@import "components/header/headerSearch";
 //baner
 @import "components/baner/banerWrapp";
 @import "components/baner/baner";
@@ -48,3 +50,16 @@
 @import "components/footer/footerSocials";
 @import "components/footer/copyright";
 @import "components/footer/copyrightWrapp";
+//breads
+@import "components/breads/breads";
+//catalog
+@import "components/catalog/catalogWrapp";
+@import "components/catalog/catalog";
+@import "components/catalog/xsFilterButton";
+//catalog view options
+@import "components/catalogview/catalogView";
+//filter
+@import "components/filter/filter";
+@import "components/filter/oneCheckbox";
+//pagination
+@import "components/paginationList/paginationList";

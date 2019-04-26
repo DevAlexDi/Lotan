@@ -29,4 +29,24 @@
             padding: 0 15px;
         }
     }
+
+    &--product_page {
+        flex-wrap: wrap;
+
+        .products__item {
+            width: 33.33%;
+
+            @media (max-width: 1400px){
+                width: 50%;
+            }
+
+            @media (max-width: 991px){
+                width: 100%;
+            }
+
+            @media (max-width: 767px){
+                padding: 0;
+            }
+        }
+    }
 }

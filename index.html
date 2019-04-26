@@ -13,75 +13,86 @@
 </head>
 <body>
     <header class="header">
-        <div class="wrapper">
-            <div class="header-top">
-                <div class="header-top__left-side">
-                    <select class="select-city">
-                        <option>Москва</option>
-                        <option>Волгоград</option>
-                    </select>
-                </div>
-                <div class="logo header-top__mid-side">
-                    <a href="#" class="logo__link">
-                        <img src="img/main-logo.jpg" class="logo__img img-responsive" alt="">
-                        <!-- <p class="logo__name">Anna lotan</p> -->
-                    </a>
-                </div>
-                <div class="header-right header-top__right-side">
-                    <div class="header-search header-right__search">
-                        <div class="header-search__search-icon">
-                            <img src="img/search.svg" class="header-search__search-loop img-responsive" alt="">
-                        </div>
+        <div class="header__bg">
+            <div class="wrapper wrapper--header">
+                <div class="header-top">
+                    <div class="header-top__left-side">
+                        <select class="select-city">
+                            <option>Москва</option>
+                            <option>Волгоград</option>
+                        </select>
                     </div>
-                    <div class="header-right__basket">
-                        <a class="header-basket" href="#">
-                            <img src="img/basket.svg" class="header-basket__icon img-responsive">
-                            <span class="header-basket__count">2</span>
-                            <span class="header-basket__text">Корзина</span>
+                    <div class="logo header-top__mid-side">
+                        <a href="#" class="logo__link">
+                            <img src="img/main-logo.jpg" class="logo__img img-responsive" alt="">
+                            <!-- <p class="logo__name">Anna lotan</p> -->
                         </a>
                     </div>
-                    <div class="header-login">
-                        <a href="#" class="header-login__link">Вход</a>
+                    <div class="header-right header-top__right-side">
+                        <div class="header-search header-right__search">
+                            <div class="header-search__search-icon">
+                                <img src="img/search.svg" class="header-search__search-loop img-responsive" alt="">
+                            </div>
+                            <form class="header-search__form">
+                                <input class="header-search__form-inp" type="text" placeholder="Поиск">
+                                <div class="header-search__form-close"></div>
+                                <input class="header-search__form-subm" type="submit">
+                            </form> 
+                        </div>
+                        <div class="header-right__basket">
+                            <a class="header-basket" href="#">
+                                <img src="img/basket.svg" class="header-basket__icon img-responsive">
+                                <span class="header-basket__count">2</span>
+                                <span class="header-basket__text">Корзина</span>
+                            </a>
+                        </div>
+                        <div class="header-login">
+                            <a href="#" class="header-login__link">Вход</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="header-bottom">
-                <nav class="header-bottom__menu">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="main-menu">
-                        <ul class="menu-list">
-                            <li class="menu-list__item">
-                                <a class="menu-list__link" href="#">Акции</a>
-                            </li>
-                            <li class="menu-list__item">
-                                <a class="menu-list__link" href="#">Новинки</a>
-                            </li>
-                            <li class="menu-list__item">
-                                <a class="menu-list__link" href="#">Линии</a>
-                            </li>
-                            <li class="menu-list__item">
-                                <a class="menu-list__link" href="#">Очищение</a>
-                            </li>
-                            <li class="menu-list__item">
-                                <a class="menu-list__link" href="#">Лицо</a>
-                            </li>
-                            <li class="menu-list__item">
-                                <a class="menu-list__link" href="#">Тело</a>
-                            </li>
-                            <li class="menu-list__item">
-                                <a class="menu-list__link" href="#">Макияж</a>
-                            </li>
-                            <li class="menu-list__item">
-                                <a class="menu-list__link" href="#">Контакты</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+        </div>
+        <div class="navigation">
+            <div class="wrapper">
+                <div class="header-bottom">
+                    <nav class="header-bottom__menu">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="main-menu">
+                            <ul class="menu-list">
+                                <li class="menu-list__item">
+                                    <a class="menu-list__link" href="#">Акции</a>
+                                </li>
+                                <li class="menu-list__item">
+                                    <a class="menu-list__link" href="#">Новинки</a>
+                                </li>
+                                <li class="menu-list__item">
+                                    <a class="menu-list__link" href="#">Линии</a>
+                                </li>
+                                <li class="menu-list__item">
+                                    <a class="menu-list__link" href="#">Очищение</a>
+                                </li>
+                                <li class="menu-list__item">
+                                    <a class="menu-list__link" href="#">Лицо</a>
+                                </li>
+                                <li class="menu-list__item">
+                                    <a class="menu-list__link" href="#">Тело</a>
+                                </li>
+                                <li class="menu-list__item">
+                                    <a class="menu-list__link" href="#">Макияж</a>
+                                </li>
+                                <li class="menu-list__item">
+                                    <a class="menu-list__link" href="#">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
             </div>
         </div>
     </header>
@@ -566,6 +577,7 @@
     <script type="text/javascript" src="js/jquery.inputmask.js"></script>
     <script type="text/javascript" src="js/select2.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/ion.rangeSlider.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>

@@ -5,8 +5,18 @@
     align-items: center;
     justify-content: flex-end;
 
+    @media (max-width: 991px){
+        flex-wrap: wrap;
+    }
+
     &__search {
         margin-right: 24px;
+
+        @media (max-width: 991px){
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 15px;
+        }
 
         @media (max-width: 767px){
             display: none;

@@ -1,0 +1,159 @@
+@import "layout/var";
+
+.filter {
+    margin-bottom: 32px;
+    padding: 32px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+
+    @media (max-width: 1199px){
+        padding: 24px;
+    }
+
+    @media (max-width: 767px){
+        box-shadow: none;
+        margin-bottom: 0;
+        padding: 24px 16px;
+    }
+
+    &__range-slider {
+        @media (max-width: 1199px){
+            padding: 0 8px;
+        }
+
+        @media (max-width: 767px){
+            padding: 0 20px;
+        }
+    }
+
+    &__price-title {
+        font-size: 18px;
+        margin-bottom: 15px;
+
+        @media (max-width: 767px){
+            font-size: 24px;
+        }
+    }
+
+    &__groupe {
+        margin-bottom: 24px;
+    }
+
+    &__title-groupe {
+        font-size: 24px;
+        margin-bottom: 14px;
+    }
+
+    &__check-box {
+        margin-bottom: 12px;
+    }
+
+    &__hidden-checkboxes {
+        display: none;
+
+        &--visible {
+            display: block;
+        }
+    }
+
+    &__button-show {
+        display: block;
+        border: none;
+        background: transparent;
+        color: $pink;
+        position: relative;
+        padding: 0;
+        padding-right: 23px;
+
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 6px 6px 0 6px;
+            border-color: $pink transparent transparent transparent;
+        }
+
+        &--hidden {
+            display: none;
+        }
+    }
+
+    &__buttons-wr {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__button-refresh {
+        background: transparent;
+        border: none;
+        display: flex;
+        align-items: center;
+        color: #606060;
+        font-size: 14px;
+        margin-bottom: 16px;
+        transition: 0.3s;
+
+        &:hover {
+            color: $pink;
+
+            svg {
+
+                path {
+                    fill: $pink;
+                }
+            }
+        }
+
+        svg {
+            display: block;
+            margin-right: 5px;
+
+            path {
+                transition: fill 0.3s;
+            }
+        }
+    }
+
+    .irs-line {
+        height: 3px;
+        background: #EFEFEF;
+    } 
+    
+    .irs-bar {
+        background-color: $pink;
+        height: 3px;
+    }
+    
+    .irs-from,
+    .irs-to,
+    .irs-single {
+        top: -5px;
+        font-size: 16px;
+        background: transparent;
+        color:  #606060;
+        &:after {
+            display: none;
+        }
+    }
+    
+    .irs-slider {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background: $pink;
+        border: 1px solid #fff;
+        cursor: pointer;
+        top: 19px;
+    }
+    
+    &--less-distance-bott {
+        padding-bottom: 15px;
+    }
+}

@@ -28,6 +28,10 @@
         @media (max-width: 1400px){
             font-size: 16px;
         }
+
+        @media (max-width: 767px){
+            padding: 0;
+        }
     }
 
     &__mid {
@@ -42,12 +46,11 @@
         justify-content: space-between;
         align-items: center;
         margin-bottom: 31px;
-
-        
     }
 
     &__cost {
         font-size: 14px;
+        padding-right: 10px;
     }
 
     &__cost-val {

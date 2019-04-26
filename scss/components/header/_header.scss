@@ -2,7 +2,24 @@
 
 .header {
     position: relative;
-    z-index: 10;
+    z-index: 11;
     background: #FFFFFF;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 46px;
+
+    @media (max-width: 767px){
+        margin-bottom: 0;
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    &__bg {
+        background: #fff;
+        position: relative;
+        z-index: 11;
+
+        @media (max-width: 767px){
+            position: static;
+            background: transparent;
+            z-index: 1;
+        }
+    }
 }

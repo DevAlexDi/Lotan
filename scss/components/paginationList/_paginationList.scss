@@ -1,0 +1,83 @@
+@import "layout/var";
+
+.pagination-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 29px;
+        height: 26px;
+        font-size: 14px;
+        transition: color 0.3s;
+        color: #1E2022;
+        position: relative;
+
+        &:hover {
+            color: $pink;
+        }
+        
+        &--prev {
+            width: auto;
+            margin-right: 15px;
+            padding-left: 26px;
+
+            @media (max-width: 767px){
+                padding-left: 16px;
+            }
+
+            &:before {
+                content: "";
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 6px 6px 6px 0;
+                border-color: transparent $pink transparent transparent;
+            }
+        }
+
+        &--next {
+            width: auto;
+            margin-left: 15px;
+            padding-right: 26px;
+
+            @media (max-width: 767px){
+                padding-right: 16px;
+            }
+
+            &:before {
+                content: "";
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 6px 0 6px 6px;
+                border-color: transparent transparent transparent $pink;
+            }
+        }
+
+        &--active {
+            color: #fff;
+            background-color: $pink;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+
+}
