@@ -14,6 +14,10 @@
         position: static;
         top: 0;
     }
+
+    &__tel {
+        display: none;
+    }
     
 
     &--fixed {
@@ -24,6 +28,14 @@
 
         @media (max-width: 767px){
             position: static;
+        }
+
+        .navigation__tel {
+            display: block;
+
+            @media (max-width: 991px){
+                display: none;
+            }
         }
     }
 }

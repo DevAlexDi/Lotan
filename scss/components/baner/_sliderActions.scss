@@ -12,7 +12,7 @@
     border: none;
     padding: 0;
     outline: none;
-    z-index: 50;
+    z-index: 9;
 
     &:before {
         content: "";
@@ -60,7 +60,7 @@
     left: 50%;
     bottom: 78px;
     transform: translateX(-50%);
-    z-index: 50;
+    z-index: 9;
 
     @media (max-width: 1300px){
         bottom: 40px;
